@@ -1,5 +1,11 @@
+import { Button } from "./components/ui/button"
+
 function App() {
-  return <h1 className="text-4xl font-bold underline">Hello Tailwind!</h1>
+  return (
+    <div className="flex min-h-screen items-center justify-center">
+      <Button>Work in progress</Button>
+    </div>
+  )
 }
 
 export default App
