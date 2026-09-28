@@ -277,15 +277,15 @@ function App() {
 
               <div className="mt-10 flex flex-wrap gap-4">
                 <a
-                  href="mailto:your@email.com"
+                  href="mailto:verneradam618@gmail.com"
                   className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition hover:opacity-80"
                 >
                   <Mail className="h-4 w-4" />
-                  Email me
+                  verneradam618@gmail.com
                 </a>
 
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/Verdanmaer"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-medium transition hover:bg-muted"
