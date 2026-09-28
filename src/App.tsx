@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, Mail } from "lucide-react"
+import { ArrowDown, ArrowUpRight, Mail, User } from "lucide-react"
 
 const projects = [
   {
@@ -20,6 +20,14 @@ const projects = [
     tech: ["SEO", "Google Ads"],
   },
 ]
+
+function ProfileImage() {
+  return (
+    <div className="aspect-[4/5] w-full max-w-sm rounded-2xl bg-muted flex items-center justify-center">
+      <User className="h-24 w-24 text-muted-foreground" strokeWidth={1} />
+    </div>
+  )
+}
 
 const skills = [
   "TODO",
@@ -69,38 +77,44 @@ function App() {
       <main>
         <section className="flex min-h-screen items-center">
           <div className="mx-auto w-full max-w-6xl px-6 py-32">
-            <div className="max-w-4xl">
-              <p className="mb-6 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
-                Fullstack Developer
-              </p>
+            <div className="grid items-center gap-12 md:grid-cols-2">
+              <div>
+                <p className="mb-6 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
+                  Fullstack Developer
+                </p>
 
-              <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
-                I build web applications
-                <span className="text-muted-foreground"> that work.</span>
-              </h1>
+                <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
+                  I build web applications
+                  <span className="text-muted-foreground"> that work.</span>
+                </h1>
 
-              <p className="mt-8 max-w-2xl text-lg leading-8 text-muted-foreground">
-                I'm Adam, a fullstack developer from Czechia with 3 years of
-                experience building web applications with React, TypeScript, PHP
-                and SQL.
-              </p>
+                <p className="mt-8 max-w-2xl text-lg leading-8 text-muted-foreground">
+                  I'm Adam, a fullstack developer from Czechia with 3 years of
+                  experience building web applications with React, TypeScript,
+                  PHP and SQL.
+                </p>
 
-              <div className="mt-10 flex flex-wrap gap-4">
-                <a
-                  href="#projects"
-                  className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition hover:opacity-80"
-                >
-                  View my work
-                  <ArrowDown className="h-4 w-4" />
-                </a>
+                <div className="mt-10 flex flex-wrap gap-4">
+                  <a
+                    href="#projects"
+                    className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition hover:opacity-80"
+                  >
+                    View my work
+                    <ArrowDown className="h-4 w-4" />
+                  </a>
 
-                <a
-                  href="#contact"
-                  className="inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-medium transition hover:bg-muted"
-                >
-                  Get in touch
-                  <ArrowUpRight className="h-4 w-4" />
-                </a>
+                  <a
+                    href="#contact"
+                    className="inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-medium transition hover:bg-muted"
+                  >
+                    Get in touch
+                    <ArrowUpRight className="h-4 w-4" />
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex justify-center md:justify-end">
+                <ProfileImage />
               </div>
             </div>
           </div>
