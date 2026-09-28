@@ -1,4 +1,5 @@
 import { ArrowDown, ArrowUpRight, Mail, User } from "lucide-react"
+import githubIcon from "./assets/github.svg"
 
 const projects = [
   {
@@ -284,12 +285,13 @@ function App() {
                 </a>
 
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/yourusername"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-medium transition hover:bg-muted"
                 >
-                  TODO: Add Github icon GitHub
+                  <img src={githubIcon} alt="" className="h-4 w-4" />
+                  GitHub
                 </a>
               </div>
             </div>
