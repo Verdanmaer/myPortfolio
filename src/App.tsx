@@ -31,14 +31,14 @@ function ProfileImage() {
 }
 
 const skills = [
-  "TODO",
+  "PHP",
   "React",
   "TypeScript",
-  "PHP",
-  "MariaDB / MySQL",
+  "SQL",
+  "MariaDB",
+  "RabbitMQ",
+  "Docker",
   "Git",
-  "HTML & CSS",
-  "REST APIs",
   "Linux",
 ]
 
@@ -84,13 +84,16 @@ function App() {
                   Fullstack Developer
                 </p>
 
-                <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
-                  I build web applications
-                  <span className="text-muted-foreground"> that work.</span>
+                <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-6xl">
+                  Web development
+                  <span className="text-muted-foreground">
+                    {" "}
+                    from frontend to backend.
+                  </span>
                 </h1>
 
                 <p className="mt-8 max-w-2xl text-lg leading-8 text-muted-foreground">
-                  I'm Adam, a fullstack developer from Czechia with 3 years of
+                  I'm Adam, a fullstack developer from Czechia with 3+ years of
                   experience building web applications with React, TypeScript,
                   PHP and SQL.
                 </p>
@@ -219,39 +222,44 @@ function App() {
 
             <div className="border-t">
               <div className="grid gap-4 border-b py-8 md:grid-cols-[180px_1fr]">
-                <p className="text-sm text-muted-foreground">TODO</p>
+                <p className="text-sm text-muted-foreground">
+                  April 2025 - May 2026
+                </p>
 
                 <div>
-                  <h3 className="text-lg font-semibold">Fullstack Developer</h3>
+                  <h3 className="text-lg font-semibold">
+                    Fullstack Developer - R2B2 a.s.
+                  </h3>
                   <p className="mt-1 text-sm text-muted-foreground">
-                    React · TypeScript · PHP · MariaDB
+                    PHP · SQL · React · TypeScript
                   </p>
                   <p className="mt-4 max-w-2xl leading-7 text-muted-foreground">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    euismod, nisl vel tincidunt lacinia, nunc nisl aliquam
-                    mauris, eget aliquam nisl nunc vel nisl. Sed euismod, nisl
-                    vel tincidunt lacinia, nunc nisl aliquam mauris, eget
-                    aliquam nisl nunc vel nisl.
+                    Developed and extended a PHP backend, including asynchronous
+                    processing. Worked with MariaDB and ClickHouse for database
+                    management and statistical data processing. Contributed to
+                    the React/TypeScript frontend and participated in
+                    introducing AI into the development process.
                   </p>
                 </div>
               </div>
 
               <div className="grid gap-4 border-b py-8 md:grid-cols-[180px_1fr]">
-                <p className="text-sm text-muted-foreground">TODO</p>
+                <p className="text-sm text-muted-foreground">
+                  June 2022 - May 2024
+                </p>
 
                 <div>
                   <h3 className="text-lg font-semibold">
-                    Junior Fullstack Developer
+                    Junior Fullstack Developer - R2B2 a.s.
                   </h3>
                   <p className="mt-1 text-sm text-muted-foreground">
-                    React · PHP · SQL
+                    HTML · CSS · React · TypeScript · PHP · SQL
                   </p>
                   <p className="mt-4 max-w-2xl leading-7 text-muted-foreground">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    euismod, nisl vel tincidunt lacinia, nunc nisl aliquam
-                    mauris, eget aliquam nisl nunc vel nisl. Sed euismod, nisl
-                    vel tincidunt lacinia, nunc nisl aliquam mauris, eget
-                    aliquam nisl nunc vel nisl.
+                    Developed and maintained a PHP and React web application,
+                    including database migrations, SQL queries, and integration
+                    with external APIs. Contributed to a UI/UX redesign by
+                    translating Figma designs into React components.
                   </p>
                 </div>
               </div>
