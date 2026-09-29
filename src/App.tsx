@@ -1,5 +1,6 @@
 import { ArrowDown, ArrowUpRight, Mail, User } from "lucide-react"
 import githubIcon from "./assets/github.svg"
+import { motion } from "framer-motion"
 
 const projects = [
   {
@@ -76,7 +77,12 @@ function App() {
       </header>
 
       <main>
-        <section className="flex min-h-screen items-center">
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="flex min-h-screen items-center"
+        >
           <div className="mx-auto w-full max-w-6xl px-6 py-32">
             <div className="grid items-center gap-12 md:grid-cols-2">
               <div>
@@ -122,9 +128,16 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
-        <section id="about" className="border-t">
+        <motion.section
+          id="about"
+          className="border-t"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="mx-auto grid max-w-6xl gap-16 px-6 py-24 md:grid-cols-2 md:py-32">
             <div>
               <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
@@ -160,9 +173,16 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
-        <section id="projects" className="border-t">
+        <motion.section
+          id="projects"
+          className="border-t"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
             <div className="mb-16">
               <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
@@ -206,9 +226,16 @@ function App() {
               ))}
             </div>
           </div>
-        </section>
+        </motion.section>
 
-        <section id="experience" className="border-t">
+        <motion.section
+          id="experience"
+          className="border-t"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
             <div className="mb-16">
               <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
@@ -265,9 +292,16 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
-        <section id="contact" className="border-t">
+        <motion.section
+          id="contact"
+          className="border-t"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
             <div className="max-w-3xl">
               <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
@@ -304,7 +338,7 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
       </main>
 
       <footer className="border-t">
