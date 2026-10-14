@@ -83,8 +83,8 @@ function App() {
           transition={{ duration: 0.6 }}
           className="flex min-h-screen items-center"
         >
-          <div className="mx-auto w-full max-w-6xl px-6 py-32">
-            <div className="grid items-center gap-12 md:grid-cols-2">
+          <div className="mx-auto w-full max-w-6xl px-6 py-24 md:py-32">
+            <div className="grid items-center gap-6 md:gap-12 md:grid-cols-2">
               <div>
                 <p className="mb-6 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
                   Fullstack Developer
@@ -108,7 +108,7 @@ function App() {
               <div className="flex justify-center md:justify-end">
                 <ProfileImage />
               </div>
-              <div className="mt-10 flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4">
                 <a
                   href="#projects"
                   className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition hover:opacity-80"
@@ -137,7 +137,7 @@ function App() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="mx-auto grid max-w-6xl gap-16 px-6 py-24 md:grid-cols-2 md:py-32">
+          <div className="mx-auto grid max-w-6xl gap-16 px-6 py-12 md:grid-cols-2 md:py-32">
             <div>
               <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
                 About me
