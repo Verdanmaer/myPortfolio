@@ -25,8 +25,12 @@ const projects = [
 
 function ProfileImage() {
   return (
-    <div className="aspect-[4/5] w-full max-w-sm rounded-2xl bg-muted flex items-center justify-center">
-      <User className="h-24 w-24 text-muted-foreground" strokeWidth={1} />
+    <div className="w-full max-w-sm rounded-2xl bg-muted flex items-center justify-center">
+      <img
+        src="/images/profile.webp"
+        alt="Portrait of me"
+        className="rounded-2xl"
+      />
     </div>
   )
 }
@@ -103,28 +107,27 @@ function App() {
                   experience building web applications with React, TypeScript,
                   PHP and SQL.
                 </p>
-
-                <div className="mt-10 flex flex-wrap gap-4">
-                  <a
-                    href="#projects"
-                    className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition hover:opacity-80"
-                  >
-                    View my work
-                    <ArrowDown className="h-4 w-4" />
-                  </a>
-
-                  <a
-                    href="#contact"
-                    className="inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-medium transition hover:bg-muted"
-                  >
-                    Get in touch
-                    <ArrowUpRight className="h-4 w-4" />
-                  </a>
-                </div>
               </div>
 
               <div className="flex justify-center md:justify-end">
                 <ProfileImage />
+              </div>
+              <div className="mt-10 flex flex-wrap gap-4">
+                <a
+                  href="#projects"
+                  className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition hover:opacity-80"
+                >
+                  View my work
+                  <ArrowDown className="h-4 w-4" />
+                </a>
+
+                <a
+                  href="#contact"
+                  className="inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-medium transition hover:bg-muted"
+                >
+                  Get in touch
+                  <ArrowUpRight className="h-4 w-4" />
+                </a>
               </div>
             </div>
           </div>
