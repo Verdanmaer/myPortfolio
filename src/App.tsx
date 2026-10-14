@@ -4,22 +4,18 @@ import { motion } from "framer-motion"
 
 const projects = [
   {
-    title: "Portfolio website",
+    title: "Portfolio Website",
     description:
-      "TODO: Add description of this website, including the tech stack used.",
-    tech: ["React", "TypeScript", "PHP", "MariaDB"],
+      "A personal portfolio built with React and TypeScript, using Vite and Tailwind CSS. Designed to present my experience, skills, and projects in a clean, responsive layout.",
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+    githubUrl: "https://github.com/Verdanmaer/myPortfolio",
   },
   {
-    title: "TODO: Add project title",
+    title: "Write It Out",
     description:
-      "TODO: Add description of this project, including the tech stack used.",
-    tech: ["React", "TypeScript"],
-  },
-  {
-    title: "TODO: Add project title",
-    description:
-      "TODO: Add description of this project, including the tech stack used.",
-    tech: ["SEO", "Google Ads"],
+      "A distraction-free desktop writing app where text gradually disappears as you type, encouraging continuous writing instead of stopping to edit. Built with Electron, React, TypeScript, and Vite.",
+    tech: ["Electron", "React", "TypeScript", "Vite"],
+    githubUrl: "https://github.com/Verdanmaer/Write-It-Out",
   },
 ]
 
@@ -197,35 +193,52 @@ function App() {
               </h2>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-3">
+            <div className="grid gap-6 md:grid-cols-2">
               {projects.map((project) => (
-                <article
+                <a
                   key={project.title}
-                  className="group flex min-h-[360px] flex-col justify-between rounded-2xl border p-6 transition hover:-translate-y-1 hover:shadow-lg"
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                 >
-                  <div>
-                    <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-xl bg-muted text-sm font-semibold">
-                      {project.title.charAt(0)}
+                  <article className="flex min-h-[320px] h-full flex-col justify-between rounded-2xl border p-6 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-lg">
+                    <div>
+                      <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-xl bg-muted text-sm font-semibold">
+                        {project.title.charAt(0)}
+                      </div>
+
+                      <h3 className="text-xl font-semibold">{project.title}</h3>
+
+                      <p className="mt-3 leading-7 text-muted-foreground">
+                        {project.description}
+                      </p>
                     </div>
 
-                    <h3 className="text-xl font-semibold">{project.title}</h3>
+                    <div className="mt-8">
+                      <div className="flex flex-wrap gap-2">
+                        {project.tech.map((technology) => (
+                          <span
+                            key={technology}
+                            className="rounded-full bg-muted px-3 py-1 text-xs text-muted-foreground"
+                          >
+                            {technology}
+                          </span>
+                        ))}
+                      </div>
 
-                    <p className="mt-3 leading-7 text-muted-foreground">
-                      {project.description}
-                    </p>
-                  </div>
-
-                  <div className="mt-8 flex flex-wrap gap-2">
-                    {project.tech.map((technology) => (
-                      <span
-                        key={technology}
-                        className="text-xs text-muted-foreground"
-                      >
-                        {technology}
-                      </span>
-                    ))}
-                  </div>
-                </article>
+                      <div className="mt-6 flex items-center gap-2 text-sm font-medium">
+                        <span>View on GitHub</span>
+                        <span
+                          aria-hidden="true"
+                          className="transition-transform group-hover:translate-x-1"
+                        >
+                          ↗
+                        </span>
+                      </div>
+                    </div>
+                  </article>
+                </a>
               ))}
             </div>
           </div>
