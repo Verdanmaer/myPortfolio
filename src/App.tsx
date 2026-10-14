@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, Mail, User } from "lucide-react"
+import { ArrowDown, ArrowUpRight, Mail } from "lucide-react"
 import githubIcon from "./assets/github.svg"
 import { motion } from "framer-motion"
 
