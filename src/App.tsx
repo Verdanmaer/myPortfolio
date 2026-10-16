@@ -182,8 +182,8 @@ function App() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
-            <div className="mb-16">
+          <div className="mx-auto max-w-6xl px-6 py-12 md:py-32">
+            <div className="mb-8 md:mb-16">
               <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
                 Selected work
               </p>
@@ -252,8 +252,8 @@ function App() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
-            <div className="mb-16">
+          <div className="mx-auto max-w-6xl px-6 py-12 md:py-32">
+            <div className="mb-8 md:mb-16">
               <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
                 Background
               </p>
@@ -318,7 +318,7 @@ function App() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+          <div className="mx-auto max-w-6xl px-6 py-12 md:py-32">
             <div className="max-w-3xl">
               <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
                 Contact
