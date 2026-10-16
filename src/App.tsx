@@ -26,6 +26,7 @@ function ProfileImage() {
         src="/images/profile.webp"
         alt="Portrait of me"
         className="rounded-2xl"
+        fetchPriority="high"
       />
     </div>
   )
