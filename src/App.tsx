@@ -100,9 +100,9 @@ function App() {
                 </h1>
 
                 <p className="mt-8 max-w-2xl text-lg leading-8 text-muted-foreground">
-                  I'm Adam, a fullstack developer from Czechia with 3+ years of
-                  experience building web applications with React, TypeScript,
-                  PHP and SQL.
+                  I'm Adam, a fullstack developer from Czechia. I build web
+                  applications, explore new ideas, and enjoy understanding
+                  what's happening behind the scenes.
                 </p>
               </div>
 
@@ -151,14 +151,15 @@ function App() {
 
             <div className="space-y-6 text-muted-foreground">
               <p>
-                I work across the frontend and backend, with most of my
-                experience in React and PHP applications.
+                Most of my professional experience has been with PHP and React,
+                working on applications that involve everything from user
+                interfaces to databases and asynchronous processing.
               </p>
 
               <p>
-                I enjoy turning ideas into practical software, working with
-                databases, and solving problems that require understanding the
-                whole system rather than just one part of it.
+                I'm particularly interested in understanding how things work,
+                learning by building, and occasionally taking a different
+                approach to solving a problem.
               </p>
 
               <div className="flex flex-wrap gap-2 pt-4">
