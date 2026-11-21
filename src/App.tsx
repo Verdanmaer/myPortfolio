@@ -9,6 +9,7 @@ const projects = [
       "A personal portfolio built with React and TypeScript, using Vite and Tailwind CSS. Designed to present my experience, skills, and projects in a clean, responsive layout.",
     tech: ["React", "TypeScript", "Vite", "Tailwind CSS"],
     githubUrl: "https://github.com/Verdanmaer/myPortfolio",
+    className: "md:-mt-16 md:mb-16",
   },
   {
     title: "Write It Out",
@@ -16,6 +17,7 @@ const projects = [
       "A distraction-free desktop writing app where text gradually disappears as you type, encouraging continuous writing instead of stopping to edit. Built with Electron, React, TypeScript, and Vite.",
     tech: ["Electron", "React", "TypeScript", "Vite"],
     githubUrl: "https://github.com/Verdanmaer/Write-It-Out",
+    className: "",
   },
 ]
 
@@ -181,7 +183,7 @@ function App() {
           transition={{ duration: 0.6 }}
         >
           <div className="mx-auto max-w-6xl px-6 py-12 md:py-32">
-            <div className="mb-8 md:mb-16">
+            <div className="mb-8 md:mb-16 text-right mr-12">
               <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
                 Selected work
               </p>
@@ -191,14 +193,14 @@ function App() {
               </h2>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="grid gap-6 md:gap-16 lg:gap-32 md:grid-cols-2">
               {projects.map((project) => (
                 <a
                   key={project.title}
                   href={project.githubUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  className={`group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${project.className}`}
                 >
                   <article className="flex min-h-[320px] h-full flex-col justify-between rounded-2xl border p-6 transition duration-200 group-hover:-translate-y-1 group-hover:shadow-lg">
                     <div>
