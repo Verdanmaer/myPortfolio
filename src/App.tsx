@@ -264,12 +264,8 @@ function App() {
             </div>
 
             <div className="border-t">
-              <div className="grid gap-4 border-b py-8 md:grid-cols-[180px_1fr]">
-                <p className="text-sm text-muted-foreground">
-                  April 2025 - May 2026
-                </p>
-
-                <div>
+              <div className="grid justify-items-end gap-4 border-b py-8 md:grid-cols-[200px_1fr]">
+                <div className="md:col-start-2">
                   <h3 className="text-lg font-semibold">
                     Fullstack Developer - R2B2 a.s.
                   </h3>
@@ -284,6 +280,10 @@ function App() {
                     introducing AI into the development process.
                   </p>
                 </div>
+
+                <p className="text-sm text-muted-foreground md:col-start-3">
+                  April 2025 - May 2026
+                </p>
               </div>
 
               <div className="grid gap-4 border-b py-8 md:grid-cols-[180px_1fr]">
