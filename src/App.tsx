@@ -87,10 +87,6 @@ function App() {
           <div className="mx-auto w-full max-w-6xl px-6 py-24 md:py-32">
             <div className="grid items-center gap-6 md:gap-12 md:grid-cols-2">
               <div>
-                <p className="mb-6 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
-                  Fullstack Developer
-                </p>
-
                 <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-6xl">
                   Web development
                   <span className="text-muted-foreground">
@@ -99,7 +95,7 @@ function App() {
                   </span>
                 </h1>
 
-                <p className="mt-8 max-w-2xl text-lg leading-8 text-muted-foreground">
+                <p className="mt-8 max-w-2xl text-lg leading-8 text-muted-foreground text-right">
                   I'm Adam, a fullstack developer from Czechia. I build web
                   applications, explore new ideas, and enjoy understanding
                   what's happening behind the scenes.
@@ -109,7 +105,7 @@ function App() {
               <div className="flex justify-center md:justify-end">
                 <ProfileImage />
               </div>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 justify-center">
                 <a
                   href="#projects"
                   className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition hover:opacity-80"
