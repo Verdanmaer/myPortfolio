@@ -320,10 +320,6 @@ function App() {
         >
           <div className="mx-auto max-w-6xl px-6 py-12 md:py-32">
             <div className="max-w-3xl">
-              <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
-                Contact
-              </p>
-
               <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl">
                 Have a project in mind?
               </h2>
