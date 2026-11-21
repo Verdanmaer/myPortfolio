@@ -139,27 +139,27 @@ function App() {
           transition={{ duration: 0.6 }}
         >
           <div className="mx-auto grid max-w-6xl gap-16 px-6 py-12 md:grid-cols-2 md:py-32">
-            <div>
-              <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
+            <div className="flex flex-col justify-between">
+              <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl skew-x-[-16deg]">
+                Always eager to learn
+              </h2>
+              <p className="mb-4 text-2xl font-medium uppercase tracking-[0.2em] text-muted-foreground md:px-8">
                 About me
               </p>
-
-              <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-                A developer who likes understanding how things work.
-              </h2>
             </div>
 
             <div className="space-y-6 text-muted-foreground">
               <p>
-                Most of my professional experience has been with PHP and React,
-                working on applications that involve everything from user
-                interfaces to databases and asynchronous processing.
+                I work across the stack, from building user interfaces to
+                working on the backend and databases. I enjoy seeing how
+                different parts of an application come together and making sure
+                they work well together.
               </p>
 
-              <p>
-                I'm particularly interested in understanding how things work,
-                learning by building, and occasionally taking a different
-                approach to solving a problem.
+              <p className="text-right">
+                I'm always curious about how things work, so I'm often trying
+                new ideas, experimenting with different tools and learning
+                something along the way.
               </p>
 
               <div className="flex flex-wrap gap-2 pt-4">
