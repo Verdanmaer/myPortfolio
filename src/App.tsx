@@ -323,12 +323,10 @@ function App() {
               <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl">
                 Have a project in mind?
               </h2>
-
               <p className="mt-6 text-lg leading-8 text-muted-foreground">
                 I'm open to discussing new opportunities, interesting projects,
                 and collaborations.
               </p>
-
               <div className="mt-10 flex flex-wrap gap-4">
                 <a
                   href="mailto:verneradam618@gmail.com"
@@ -337,7 +335,6 @@ function App() {
                   <Mail className="h-4 w-4" />
                   verneradam618@gmail.com
                 </a>
-
                 <a
                   href="https://github.com/Verdanmaer"
                   target="_blank"
@@ -346,6 +343,14 @@ function App() {
                 >
                   <img src={githubIcon} alt="" className="h-4 w-4" />
                   GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/adam-verner-574631230/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-medium transition hover:bg-muted"
+                >
+                  LinkedIn
                 </a>
               </div>
             </div>
